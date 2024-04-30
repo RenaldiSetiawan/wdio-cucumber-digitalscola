@@ -1,0 +1,17 @@
+{
+  "name": "wdio-cucumber-digitalscola",
+  "type": "module",
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js"
+  },
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.36.1",
+    "@wdio/cli": "^8.36.1",
+    "@wdio/cucumber-framework": "^8.36.1",
+    "@wdio/local-runner": "^8.36.1",
+    "wdio-cucumberjs-json-reporter": "^5.2.1"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.1"
+  }
+}
