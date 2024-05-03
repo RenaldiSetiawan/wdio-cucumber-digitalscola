@@ -49,9 +49,15 @@ export const config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        browserName: 'chrome'
-    }],
+    // Multi Remote Executin
+    capabilities: [
+        {
+            browserName: 'chrome'       
+        },
+        {
+            browserName: 'MicrosoftEdge'
+        }
+    ],
 
     //
     // ===================
@@ -123,7 +129,11 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: [['allure', {outputDir: 'allure-results'}],'cucumberjs-json'],
+    reporters: [
+        ['allure', {outputDir: 'allure-results'}],
+        'cucumberjs-json', 
+        'spec'
+    ],
 
     // If you are using Cucumber you need to specify the location of your step definitions.
     cucumberOpts: {
