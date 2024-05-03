@@ -1,5 +1,5 @@
 # wdio-cucumber-digitalscola
-Automation - Webdriver.io - Cucumber - 
+Automation - Webdriver.io - Cucumber - Gherkin
 
 ## Ringkasa
 Webdriver.io project configured with Cucumber framework. 
